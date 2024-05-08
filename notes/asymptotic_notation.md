@@ -1,4 +1,8 @@
-# Asymptotic Notation
+# Notes
+
+## Asymptotic Notation
+
+Pomos Needed: 1
 
 Video: [https://www.youtube.com/watch?v=iOq5kSKqeR4](Asymptotic Notation)
 It's all about that runtime length:
@@ -14,3 +18,11 @@ Ex: over time can slowdown program unless the input is really small, then it cou
 
 4) Logarithmic time complexity = O(log n) = runtime grows to the logarithm of the input size
 Ex: runtime grows very slowly compared to the input size, think of halving or the logarithm graph
+
+## Big O Notation
+
+Pomos Needed: 1
+
+Video: [https://youtu.be/V6mKVRU1evU](Big O Notations)
+
+I personally didn't get anything from this video. In summary, he was explaining big o notation using Java.
