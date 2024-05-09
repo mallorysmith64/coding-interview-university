@@ -48,7 +48,7 @@ This means that Big O sets an upper bound for how slow code can be, and Big Omeg
 
 ## Skiena video
 
-Pomos Needed: 2
+Pomos Needed: 1
 
 Video: [https://youtu.be/z1mkCe3kVUA](Skiena video, CSE 373 -- Lecture 2, Fall 2020)
 
@@ -63,3 +63,20 @@ Video: [https://youtu.be/z1mkCe3kVUA](Skiena video, CSE 373 -- Lecture 2, Fall 2
 Assuming C, C&#x2081;, and C&#x2082; are all constants independent of n.
 
 The major point I learned from this video is that it's easier to talk about upper and lower bounds of a function than the complex function that lies in the middle of these two.
+
+## UC Berkeley Big O (video)
+
+Pomos Needed: 2
+
+Video: [https://archive.org/details/ucberkeley_webcast_VIS4YDpuP98](UC Berkeley Big O (video)
+
+* For Big O notation, it doesn't usually matter what the constant factors are, so we can leave them out of the notation. For example, we could write O(2n), but it would be unnecessary to write the 2 because it is a constant, and therefore can be ignored.
+
+* Algorithms that run in O(nlogn) time or faster are usually considered efficient. </br>
+Whereas, algorithms that run in n^7 time or slower are usually considered useless.
+
+* Binary search on an array:
+
+1. Worst-case running time is O(log n)
+2. Best-case running time is O(1) because it could find what you are looking for in the first attempt
+3. Memory usage can be expressed as O(n)
