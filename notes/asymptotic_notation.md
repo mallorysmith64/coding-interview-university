@@ -29,7 +29,7 @@ I personally didn't get anything from this video. In summary, he was explaining 
 
 ## Big Oh Notation (and Omega and Theta)
 
-Pomos Needed: 3
+Pomos Needed: 2
 
 Video: [https://youtu.be/ei-A_wy5Yxw?list=PL1BaGV1cIH4UhkL8a9bJGG356covJ76qN](Big Oh Notation (and Omega and Theta))
 
@@ -45,3 +45,21 @@ I got the formal definition out of this video, and I learned about big theta and
 * Big Theta describes the average case, think of the typical case
 * Big Omega represents the best case performance for an algorithm, think of utopia
 This means that Big O sets an upper bound for how slow code can be, and Big Omega sets the lower bound for fast it can perform.
+
+## Skiena video
+
+Pomos Needed: 2
+
+Video: [https://youtu.be/z1mkCe3kVUA](Skiena video, CSE 373 -- Lecture 2, Fall 2020)
+
+**Names of Bounding Functions:**
+
+1) g(n) = O(f(n)) meaning C * f(n) is the upper bound on g(n)
+
+2) g(n) = &Theta;(f(n)) meaning C&#x2081; *f(n) is an upper bound on g(n) and C&#x2082;*f(n) is the lower bound on g(n)
+
+3) g(n) = &Omega;(f(n)) meaning C * f(n) is the lower bound on g(n)
+
+Assuming C, C&#x2081;, and C&#x2082; are all constants independent of n.
+
+The major point I learned from this video is that it's easier to talk about upper and lower bounds of a function than the complex function that lies in the middle of these two.
