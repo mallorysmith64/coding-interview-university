@@ -1,10 +1,10 @@
-# Notes
+# Asymptotic Notation Notes
 
 ## Asymptotic Notation
 
 Pomos Needed: 1
 
-Video: [https://www.youtube.com/watch?v=iOq5kSKqeR4](Asymptotic Notation)
+Video: [https://www.youtube.com/watch?v=iOq5kSKqeR4](Harvard CS50 - Asymptotic Notation (video))
 It's all about that runtime length:
 
 1) Linear time complexity = O(n) = runtime will grow linearly with the input size
@@ -19,11 +19,11 @@ Ex: over time can slowdown program unless the input is really small, then it cou
 4) Logarithmic time complexity = O(log n) = runtime grows to the logarithm of the input size
 Ex: runtime grows very slowly compared to the input size, think of halving or the logarithm graph
 
-## Big O Notation
+## Big O Notations (general quick tutorial)
 
 Pomos Needed: 1
 
-Video: [https://youtu.be/V6mKVRU1evU](Big O Notations)
+Video: [https://youtu.be/V6mKVRU1evU](Big O Notations (general quick tutorial) (video))
 
 I personally didn't get anything from this video. In summary, he was explaining big o notation using Java.
 
@@ -64,11 +64,11 @@ Assuming C, C&#x2081;, and C&#x2082; are all constants independent of n.
 
 The major point I learned from this video is that it's easier to talk about upper and lower bounds of a function than the complex function that lies in the middle of these two.
 
-## UC Berkeley Big O (video)
+## UC Berkeley Big O
 
-Pomos Needed: 2
+Pomos Needed: 1-2
 
-Video: [https://archive.org/details/ucberkeley_webcast_VIS4YDpuP98](UC Berkeley Big O (video)
+Video: [https://archive.org/details/ucberkeley_webcast_VIS4YDpuP98](UC Berkeley Big O (video))
 
 * For Big O notation, it doesn't usually matter what the constant factors are, so we can leave them out of the notation. For example, we could write O(2n), but it would be unnecessary to write the 2 because it is a constant, and therefore can be ignored.
 
@@ -80,3 +80,19 @@ Whereas, algorithms that run in n^7 time or slower are usually considered useles
 1. Worst-case running time is O(log n)
 2. Best-case running time is O(1) because it could find what you are looking for in the first attempt
 3. Memory usage can be expressed as O(n)
+
+## Amortized Analysis
+
+Pomos Needed: 1
+
+Video: [https://youtu.be/B3SpQZaAZP4?list=PL1BaGV1cIH4UhkL8a9bJGG356covJ76qN](Amortized Analysis (video))
+
+* Definition of Amortized Analysis: method for analyzing average-case time complexities of algorithms that perform seq. of operations, where some operations are more expensive or slower than others
+
+* The main objective is to make the average cost of each operation less or constant compared to the cost without this analysis.
+
+* Data structures where this is used includes: Hash Tables, Disjoint Sets, and Splay Trees
+
+* It differs from big o or worse case runtime performance because instead of giving the upper bound on the runtime of one operation, it gives us an average-case analysis of the algorithm for several operations over a given period of time.
+
+Note: I didn't find the video helpful. I read up on the topic by referring to: [https://www.geeksforgeeks.org/introduction-to-amortized-analysis/](Introduction to Amortized Analysis)
