@@ -26,3 +26,22 @@ Pomos Needed: 1
 Video: [https://youtu.be/V6mKVRU1evU](Big O Notations)
 
 I personally didn't get anything from this video. In summary, he was explaining big o notation using Java.
+
+## Big Oh Notation (and Omega and Theta)
+
+Pomos Needed: 3
+
+Video: [https://youtu.be/ei-A_wy5Yxw?list=PL1BaGV1cIH4UhkL8a9bJGG356covJ76qN](Big Oh Notation (and Omega and Theta))
+
+The formal mathematical notation for Big O notation is as follows: </br>
+f(n) = O(g(n)) if c and n, </br>
+|f(n)| &leq; C*g(n) for all n &GreaterEqual; n&#x2080;
+
+This definition is read as f(x) is big O of g(x) if the absolute value of f(x) is at most a positive constant multiple of g(x) for all large values of x.
+
+I got the formal definition out of this video, and I learned about big theta and big omega.
+
+* Big O describes the worst-case performance of an algorithm, think of the horror
+* Big Theta describes the average case, think of the typical case
+* Big Omega represents the best case performance for an algorithm, think of utopia
+This means that Big O sets an upper bound for how slow code can be, and Big Omega sets the lower bound for fast it can perform.
