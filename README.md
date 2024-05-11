@@ -27,8 +27,13 @@
 
 Well, that's about enough of that.
 
-- [ ] When you go through "Cracking the Coding Interview", there is a chapter on this, and at the end there is a quiz to see
-if you can identify the runtime complexity of different algorithms. It's a super review and test.
+- [X] 1. Read "Grokking Algorithms: An illustrated guide for programmers and other curious people", </br>
+Chapter 1 on Big O notation
+
+- [X] 2. Read/Do problems from "A Common Sense Guide to Data Structures and Algorithms", </br>
+Ch 3 Big O Notation
+
+- [ ] 3. Read/Do problems from "Cracking the Coding Interview"
 
 ## Data Structures
 
