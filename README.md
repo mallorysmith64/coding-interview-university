@@ -39,13 +39,13 @@ Ch 3 Big O Notation
 
 - ### Arrays
 
-  - [ ] About Arrays:
-    - [Arrays CS50 Harvard University](https://www.youtube.com/watch?v=tI_tIZFyKBw&t=3009s)
-      - [Arrays (video)](https://www.coursera.org/lecture/data-structures/arrays-OsBSF)
-      - [UC Berkeley CS61B - Linear and Multi-Dim Arrays (video)](https://archive.org/details/ucberkeley_webcast_Wp8oiO_CZZE) (Start watching from 15m 32s)
-      - [Dynamic Arrays (video)](https://www.coursera.org/lecture/data-structures/dynamic-arrays-EwbnV)
-      - [Jagged Arrays (video)](https://www.youtube.com/watch?v=1jtrQqYpt7g)
-  - [ ] Implement a vector (mutable array with automatic resizing):
+  - About Arrays:
+    - [X] [Arrays CS50 Harvard University](https://www.youtube.com/watch?v=tI_tIZFyKBw&t=3009s)
+    - [ ] [Arrays (video)](https://www.coursera.org/lecture/data-structures/arrays-OsBSF)
+    - [ ] [UC Berkeley CS61B - Linear and Multi-Dim Arrays (video)](https://archive.org/details/ucberkeley_webcast_Wp8oiO_CZZE) (Start watching from 15m 32s)
+    - [ ] [Dynamic Arrays (video)](https://www.coursera.org/lecture/data-structures/dynamic-arrays-EwbnV)
+    - [ ] [Jagged Arrays (video)](https://www.youtube.com/watch?v=1jtrQqYpt7g)
+    - [ ] Implement a vector (mutable array with automatic resizing):
     - [ ] Practice coding using arrays and pointers, and pointer math to jump to an index instead of using indexing.
     - [ ] New raw data array with allocated memory
       - can allocate int array under the hood, just not use its features
@@ -176,7 +176,7 @@ Ch 3 Big O Notation
     - binary search (on a sorted array of integers)
     - binary search using recursion
 
-- ### Bitwise operations
+- ###Bitwise operations
   - [ ] [Bits cheat sheet](https://github.com/jwasham/coding-interview-university/blob/main/extras/cheat%20sheets/bits-cheat-sheet.pdf)
     - you should know many of the powers of 2 from (2^1 to 2^16 and 2^32)
   - [ ] Get a really good understanding of manipulating bits with: &, |, ^, ~, >>, <<
@@ -189,7 +189,8 @@ Ch 3 Big O Notation
     - [ ] [Bithacks](https://graphics.stanford.edu/~seander/bithacks.html)
     - [ ] [The Bit Twiddler](https://bits.stephan-brumme.com/)
     - [ ] [The Bit Twiddler Interactive](https://bits.stephan-brumme.com/interactive.html)
-    - [ ] [Bit Hacks (video)](https://www.youtube.com/watch?v=ZusiKXcz_ac) - [ ][practice operations](https://pconrad.github.io/old_pconrad_cs16/topics/bitOps/)
+    - [ ] [Bit Hacks (video)](https://www.youtube.com/watch?v=ZusiKXcz_ac)
+    - [ ] [Practice Operations](https://pconrad.github.io/old_pconrad_cs16/topics/bitOps/)
   - [ ] 2s and 1s complement
     - [Binary: Plusses & Minuses (Why We Use Two's Complement) (video)](https://www.youtube.com/watch?v=lKTsv6iVxV4)
     - [1s Complement](https://en.wikipedia.org/wiki/Ones%27_complement)
@@ -255,7 +256,7 @@ Ch 3 Big O Notation
     - [ ] delete_value
     - [ ] get_successor // returns the next-highest value in the tree after given value, -1 if none
 
-- ### Heap / Priority Queue / Binary Heap
+- ###Heap / Priority Queue / Binary Heap
   - visualized as a tree, but is usually linear in storage (array, linked list)
   - [ ] [Heap](<https://en.wikipedia.org/wiki/Heap_(data_structure)>)
   - [ ] [Introduction (video)](https://www.coursera.org/lecture/data-structures/introduction-2OpTs)
@@ -666,22 +667,23 @@ Graphs can be used to represent many problems in computer science, so this secti
     - Very technical talk for kernel devs. Don't worry if most is over your head.
     - The first half is enough.
 
-- ### Networking
-  - **If you have networking experience or want to be a reliability engineer or operations engineer, expect questions**
-  - Otherwise, this is just good to know
-  - [ ] [Khan Academy](https://www.khanacademy.org/computing/code-org/computers-and-the-internet)
-  - [ ] [UDP and TCP: Comparison of Transport Protocols (video)](https://www.youtube.com/watch?v=Vdc8TCESIg8)
-  - [ ] [TCP/IP and the OSI Model Explained! (video)](https://www.youtube.com/watch?v=e5DEVa9eSN0)
-  - [ ] [Packet Transmission across the Internet. Networking & TCP/IP tutorial. (video)](https://www.youtube.com/watch?v=nomyRJehhnM)
-  - [ ] [HTTP (video)](https://www.youtube.com/watch?v=WGJrLqtX7As)
-  - [ ] [SSL and HTTPS (video)](https://www.youtube.com/watch?v=S2iBR2ZlZf0)
-  - [ ] [SSL/TLS (video)](https://www.youtube.com/watch?v=Rp3iZUvXWlM)
-  - [ ] [HTTP 2.0 (video)](https://www.youtube.com/watch?v=E9FxNzv1Tr8)
-  - [ ] [Video Series (21 videos) (video)](https://www.youtube.com/playlist?list=PLEbnTDJUr_IegfoqO4iPnPYQui46QqT0j)
-  - [ ] [Subnetting Demystified - Part 5 CIDR Notation (video)](https://www.youtube.com/watch?v=t5xYI0jzOf4)
-  - [ ] Sockets:
-    - [ ] [Java - Sockets - Introduction (video)](https://www.youtube.com/watch?v=6G_W54zuadg&t=6s)
-    - [ ] [Socket Programming (video)](https://www.youtube.com/watch?v=G75vN2mnJeQ)
+### Networking
+
+- **If you have networking experience or want to be a reliability engineer or operations engineer, expect questions**
+- Otherwise, this is just good to know
+- [ ] [Khan Academy](https://www.khanacademy.org/computing/code-org/computers-and-the-internet)
+- [ ] [UDP and TCP: Comparison of Transport Protocols (video)](https://www.youtube.com/watch?v=Vdc8TCESIg8)
+- [ ] [TCP/IP and the OSI Model Explained! (video)](https://www.youtube.com/watch?v=e5DEVa9eSN0)
+- [ ] [Packet Transmission across the Internet. Networking & TCP/IP tutorial. (video)](https://www.youtube.com/watch?v=nomyRJehhnM)
+- [ ] [HTTP (video)](https://www.youtube.com/watch?v=WGJrLqtX7As)
+- [ ] [SSL and HTTPS (video)](https://www.youtube.com/watch?v=S2iBR2ZlZf0)
+- [ ] [SSL/TLS (video)](https://www.youtube.com/watch?v=Rp3iZUvXWlM)
+- [ ] [HTTP 2.0 (video)](https://www.youtube.com/watch?v=E9FxNzv1Tr8)
+- [ ] [Video Series (21 videos) (video)](https://www.youtube.com/playlist?list=PLEbnTDJUr_IegfoqO4iPnPYQui46QqT0j)
+- [ ] [Subnetting Demystified - Part 5 CIDR Notation (video)](https://www.youtube.com/watch?v=t5xYI0jzOf4)
+- [ ] Sockets:
+  - [ ] [Java - Sockets - Introduction (video)](https://www.youtube.com/watch?v=6G_W54zuadg&t=6s)
+  - [ ] [Socket Programming (video)](https://www.youtube.com/watch?v=G75vN2mnJeQ)
 
 ---
 
@@ -1247,58 +1249,59 @@ You're never really done.
     - [MIT 6.851 - Memory Hierarchy Models (video)](https://www.youtube.com/watch?v=V3omVLzI0WE&index=7&list=PLUl4u3cNGP61hsJNdULdudlRL493b-XZf) - covers cache-oblivious B-Trees, very interesting data structures - the first 37 minutes are very technical, and may be skipped (B is block size, cache line size)
     - [[Review] B-Trees (playlist) in 26 minutes (video)](https://www.youtube.com/playlist?list=PL9xmBV_5YoZNFPPv98DjTdD9X6UI9KMHz)
 
-* ### k-D Trees
+### k-D Trees
 
-  - Great for finding a number of points in a rectangle or higher-dimensional object
+- Great for finding a number of points in a rectangle or higher-dimensional object
   - A good fit for k-nearest neighbors
   - [kNN K-d tree algorithm (video)](https://www.youtube.com/watch?v=Y4ZgLlDfKDg)
 
-* ### Skip lists
+### Skip lists
 
-  - "These are somewhat of a cult data structure" - Skiena
+- "These are somewhat of a cult data structure" - Skiena
   - [Randomization: Skip Lists (video)](https://www.youtube.com/watch?v=2g9OSRKJuzM&index=10&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp)
   - [For animations and a little more detail](https://en.wikipedia.org/wiki/Skip_list)
 
-* ### Network Flows
+### Network Flows
 
-  - [Ford-Fulkerson in 5 minutes — Step by step example (video)](https://www.youtube.com/watch?v=Tl90tNtKvxs)
-  - [Ford-Fulkerson Algorithm (video)](https://www.youtube.com/watch?v=v1VgJmkEJW0)
-  - [Network Flows (video)](https://www.youtube.com/watch?v=2vhN4Ice5jI)
+- [Ford-Fulkerson in 5 minutes — Step by step example (video)](https://www.youtube.com/watch?v=Tl90tNtKvxs)
+- [Ford-Fulkerson Algorithm (video)](https://www.youtube.com/watch?v=v1VgJmkEJW0)
+- [Network Flows (video)](https://www.youtube.com/watch?v=2vhN4Ice5jI)
 
-* ### Disjoint Sets & Union Find
+### Disjoint Sets & Union Find
 
-  - [UCB 61B - Disjoint Sets; Sorting & selection (video)](https://archive.org/details/ucberkeley_webcast_MAEGXTwmUsI)
-  - [Sedgewick Algorithms - Union-Find (6 videos)](https://www.coursera.org/learn/algorithms-part1/home/week/1)
+- [UCB 61B - Disjoint Sets; Sorting & selection (video)](https://archive.org/details/ucberkeley_webcast_MAEGXTwmUsI)
+- [Sedgewick Algorithms - Union-Find (6 videos)](https://www.coursera.org/learn/algorithms-part1/home/week/1)
 
-* ### Math for Fast Processing
+### Math for Fast Processing
 
-  - [Integer Arithmetic, Karatsuba Multiplication (video)](https://www.youtube.com/watch?v=eCaXlAaN2uE&index=11&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
-  - [The Chinese Remainder Theorem (used in cryptography) (video)](https://www.youtube.com/watch?v=ru7mWZJlRQg)
+- [Integer Arithmetic, Karatsuba Multiplication (video)](https://www.youtube.com/watch?v=eCaXlAaN2uE&index=11&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
+- [The Chinese Remainder Theorem (used in cryptography) (video)](https://www.youtube.com/watch?v=ru7mWZJlRQg)
 
-* ### Treap
+### Treap
 
-  - Combination of a binary search tree and a heap
+- Combination of a binary search tree and a heap
   - [Treap](https://en.wikipedia.org/wiki/Treap)
   - [Data Structures: Treaps explained (video)](https://www.youtube.com/watch?v=6podLUYinH8)
   - [Applications in set operations](https://www.cs.cmu.edu/~scandal/papers/treaps-spaa98.pdf)
 
-* ### Linear Programming (videos)
+### Linear Programming (videos)
 
-  - [Linear Programming](https://www.youtube.com/watch?v=M4K6HYLHREQ)
-  - [Finding minimum cost](https://www.youtube.com/watch?v=2ACJ9ewUC6U)
-  - [Finding maximum value](https://www.youtube.com/watch?v=8AA_81xI3ik)
-  - [Solve Linear Equations with Python - Simplex Algorithm](https://www.youtube.com/watch?v=44pAWI7v5Zk)
+- [Linear Programming](https://www.youtube.com/watch?v=M4K6HYLHREQ)
+- [Finding minimum cost](https://www.youtube.com/watch?v=2ACJ9ewUC6U)
+- [Finding maximum value](https://www.youtube.com/watch?v=8AA_81xI3ik)
+- [Solve Linear Equations with Python - Simplex Algorithm](https://www.youtube.com/watch?v=44pAWI7v5Zk)
 
-* ### Geometry, Convex hull (videos)
+### Geometry, Convex hull (videos)
 
-  - [Graph Alg. IV: Intro to geometric algorithms - Lecture 9](https://youtu.be/XIAQRlNkJAw?list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&t=3164)
-  - [Geometric Algorithms: Graham & Jarvis - Lecture 10](https://www.youtube.com/watch?v=J5aJEcOr6Eo&index=10&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm)
-  - [Divide & Conquer: Convex Hull, Median Finding](https://www.youtube.com/watch?v=EzeYI7p9MjU&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&index=2)
+- [Graph Alg. IV: Intro to geometric algorithms - Lecture 9](https://youtu.be/XIAQRlNkJAw?list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&t=3164)
+- [Geometric Algorithms: Graham & Jarvis - Lecture 10](https://www.youtube.com/watch?v=J5aJEcOr6Eo&index=10&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm)
+- [Divide & Conquer: Convex Hull, Median Finding](https://www.youtube.com/watch?v=EzeYI7p9MjU&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&index=2)
 
-* ### Discrete math
-  - [Computer Science 70, 001 - Spring 2015 - Discrete Mathematics and Probability Theory](http://www.infocobuild.com/education/audio-video-courses/computer-science/cs70-spring2015-berkeley.html)
-  - [Discrete Mathematics by Shai Simonson (19 videos)](https://www.youtube.com/playlist?list=PLWX710qNZo_sNlSWRMVIh6kfTjolNaZ8t)
-  - [Discrete Mathematics By IIT Ropar NPTEL](https://nptel.ac.in/courses/106/106/106106183/)
+### Discrete math
+
+- [Computer Science 70, 001 - Spring 2015 - Discrete Mathematics and Probability Theory](http://www.infocobuild.com/education/audio-video-courses/computer-science/cs70-spring2015-berkeley.html)
+- [Discrete Mathematics by Shai Simonson (19 videos)](https://www.youtube.com/playlist?list=PLWX710qNZo_sNlSWRMVIh6kfTjolNaZ8t)
+- [Discrete Mathematics By IIT Ropar NPTEL](https://nptel.ac.in/courses/106/106/106106183/)
 
 ---
 
@@ -1323,16 +1326,16 @@ You're never really done.
     - [Why Is The Dependency Inversion Principle And Why Is It Important](http://stackoverflow.com/questions/62539/what-is-the-dependency-inversion-principle-and-why-is-it-important)
     - [more flavor](http://docs.google.com/a/cleancoder.com/viewer?a=v&pid=explorer&chrome=true&srcid=0BwhCYaYDn8EgMjdlMWIzNGUtZTQ0NC00ZjQ5LTkwYzQtZjRhMDRlNTQ3ZGMz&hl=en)
 
-* **Union-Find**
+- **Union-Find**
 
-  - [Overview](https://www.coursera.org/learn/data-structures/lecture/JssSY/overview)
-  - [Naive Implementation](https://www.coursera.org/learn/data-structures/lecture/EM5D0/naive-implementations)
-  - [Trees](https://www.coursera.org/learn/data-structures/lecture/Mxu0w/trees)
-  - [Union By Rank](https://www.coursera.org/learn/data-structures/lecture/qb4c2/union-by-rank)
-  - [Path Compression](https://www.coursera.org/learn/data-structures/lecture/Q9CVI/path-compression)
-  - [Analysis Options](https://www.coursera.org/learn/data-structures/lecture/GQQLN/analysis-optional)
+- [Overview](https://www.coursera.org/learn/data-structures/lecture/JssSY/overview)
+- [Naive Implementation](https://www.coursera.org/learn/data-structures/lecture/EM5D0/naive-implementations)
+- [Trees](https://www.coursera.org/learn/data-structures/lecture/Mxu0w/trees)
+- [Union By Rank](https://www.coursera.org/learn/data-structures/lecture/qb4c2/union-by-rank)
+- [Path Compression](https://www.coursera.org/learn/data-structures/lecture/Q9CVI/path-compression)
+- [Analysis Options](https://www.coursera.org/learn/data-structures/lecture/GQQLN/analysis-optional)
 
-* **More Dynamic Programming** (videos)
+- **More Dynamic Programming** (videos)
 
   - [6.006: Dynamic Programming I: Fibonacci, Shortest Paths](https://www.youtube.com/watch?v=r4-cftqTcdI&ab_channel=MITOpenCourseWare)
   - [6.006: Dynamic Programming II: Text Justification, Blackjack](https://www.youtube.com/watch?v=KLBCUx1is2c&ab_channel=MITOpenCourseWare)
@@ -1342,12 +1345,12 @@ You're never really done.
   - [6.046: Dynamic Programming: All-Pairs Shortest Paths](https://www.youtube.com/watch?v=NzgFUwOaoIw&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&index=15)
   - [6.046: Dynamic Programming (student recitation)](https://www.youtube.com/watch?v=krZI60lKPek&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&index=12)
 
-* **Advanced Graph Processing** (videos)
+- **Advanced Graph Processing** (videos)
 
   - [Synchronous Distributed Algorithms: Symmetry-Breaking. Shortest-Paths Spanning Trees](https://www.youtube.com/watch?v=mUBmcbbJNf4&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&index=27)
   - [Asynchronous Distributed Algorithms: Shortest-Paths Spanning Trees](https://www.youtube.com/watch?v=kQ-UQAzcnzA&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&index=28)
 
-* MIT **Probability** (mathy, and go slowly, which is good for mathy things) (videos):
+- MIT **Probability** (mathy, and go slowly, which is good for mathy things) (videos):
 
   - [MIT 6.042J - Probability Introduction](https://www.youtube.com/watch?v=SmFwFdESMHI&index=18&list=PLB7540DEDD482705B)
   - [MIT 6.042J - Conditional Probability](https://www.youtube.com/watch?v=E6FbvM-FGZ8&index=19&list=PLB7540DEDD482705B)
@@ -1358,9 +1361,9 @@ You're never really done.
   - [MIT 6.042J - Large Deviations](https://www.youtube.com/watch?v=q4mwO2qS2z4&index=24&list=PLB7540DEDD482705B)
   - [MIT 6.042J - Random Walks](https://www.youtube.com/watch?v=56iFMY8QW2k&list=PLB7540DEDD482705B&index=25)
 
-* [Simonson: Approximation Algorithms (video)](https://www.youtube.com/watch?v=oDniZCmNmNw&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&index=19)
+- [Simonson: Approximation Algorithms (video)](https://www.youtube.com/watch?v=oDniZCmNmNw&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&index=19)
 
-* **String Matching**
+- **String Matching**
 
   - Rabin-Karp (videos):
     - [Rabin Karps Algorithm](https://www.coursera.org/lecture/data-structures/rabin-karps-algorithm-c0Qkw)
@@ -1378,7 +1381,7 @@ You're never really done.
     - nice explanation of tries
     - can be skipped
 
-* **Sorting**
+- **Sorting**
 
   - Stanford lectures on sorting:
     - [Lecture 15 | Programming Abstractions (video)](https://www.youtube.com/watch?v=ENp00xylP7c&index=15&list=PLFE6E58F856038C69)
@@ -1390,7 +1393,7 @@ You're never really done.
     - [CSE373 2020 - Mergesort/Quicksort (video)](https://www.youtube.com/watch?v=jUf-UQ3a0kg&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=8)
     - [CSE373 2020 - Linear Sorting (video)](https://www.youtube.com/watch?v=0ksyQKmre84&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=9)
 
-* NAND To Tetris: [Build a Modern Computer from First Principles](https://www.coursera.org/learn/build-a-computer)
+- NAND To Tetris: [Build a Modern Computer from First Principles](https://www.coursera.org/learn/build-a-computer)
 
 ## Video Series
 
