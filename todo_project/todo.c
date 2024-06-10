@@ -10,13 +10,13 @@ struct task
     int task_id;
     char task_name[100];
     char task_description[200];
-    char due_date[20];
+    // char due_date[20];
     char *ptr;
     char *ptr2;
 };
 
 // create initial memory for tasks
-struct task static *initialTask(int id, char name[], char description[], char due_date[])
+struct task static *initialTask(int id, char name[], char description[])
 {
     struct task *ptr = malloc(10 * sizeof(struct task));
 
@@ -28,23 +28,25 @@ struct task static *initialTask(int id, char name[], char description[], char du
     else
     {
         printf("Malloc successful");
-        ptr->task_id = id;
+        struct task *t;
+        // memset(&t, 0, sizeof(t));
+        t->task_id;
+        // strncpy(ptr->task_name, name, 100);
         strcpy(ptr->task_name, name);
         strcpy(ptr->task_description, description);
-        strcpy(ptr->due_date, due_date);
+        // strcpy(ptr->due_date, due_date);
 
-        // printf("\n%p\n%p\n", ptr, &ptr);
         printf("\nName: %s\n", name);
         printf("Description: %s\n", description);
-        printf("Due Date: %s\n", due_date);
+        // printf("Due Date: %s\n", due_date);
 
-        free(ptr);
+        // free(ptr);
     }
     return ptr;
 }
 
 // realloc memory for tasks
-void static resizeTask(struct task **ptr, int id, char name[], char description[], char due_date[])
+void static resizeTask(struct task **ptr, int id, char name[], char description[])
 {
     struct task *ptr2 = realloc(*ptr, 40 * sizeof(struct task));
 
@@ -57,11 +59,12 @@ void static resizeTask(struct task **ptr, int id, char name[], char description[
     {
         printf("Realloc successful");
     }
+
     free(ptr2);
 }
 
 // write tasks to file
-void static createTask(struct task **ptr, int id, char name[], char description[], char due_date[])
+void static createTask(struct task **ptr, int id, char name[], char description[])
 {
 
     int i, n = 1;
@@ -71,28 +74,34 @@ void static createTask(struct task **ptr, int id, char name[], char description[
     {
 
         FILE *fptr = fopen("todolist.txt", "a");
+
+        fprintf(fptr, "\n%d\t%s\t%s\t", count, name, description);
+        printf("\nCreated task successfully!\n%s\n%s", name, description);
         count++;
-        fprintf(fptr, "\n%d\t %s\t %s\t %s\t", count, name, description, due_date);
-        printf("\nCreated task successfully!: %s", name);
         fclose(fptr);
     }
 }
 
 // read all tasks from file
-void static readTask(struct task **ptr, char name[], char description[], char due_date[])
+void static readTask(struct task **ptr, int id, char name[], char description[])
 {
     FILE *fptr = fopen("todolist.txt", "r");
 
-    int i, n = 2;
-    // int count = 0;
-
-    puts("\n#\t Task Name:\t Description:\t Due Date:\n");
-    for (i = 0; i < n; i++)
+    if (fptr == NULL)
     {
-        fscanf(fptr, "%s\t %s\t %s\t", name, description, due_date);
-        printf("%s\t %s\t %s\t\n", name, description, due_date);
-        fclose(fptr);
+        perror("File does not exist");
+        exit(1);
     }
+
+    puts("\n#\tTask Name:\tDescription:\tDue Date:");
+
+    while (!feof(fptr))
+    {
+        char ch;
+        ch = fgetc(fptr);
+        printf("%c", ch);
+    }
+    fclose(fptr);
 }
 
 int main()
@@ -127,19 +136,19 @@ int main()
             fgets(todo.task_description, sizeof(todo.task_description), stdin);
             sscanf(todo.task_description, "%99[^\n]", todo.task_description);
 
-            printf("Enter due date: ");
-            fgets(todo.due_date, sizeof(todo.due_date), stdin);
-            sscanf(todo.due_date, "%s", todo.due_date);
+            // printf("Enter due date: ");
+            // fgets(todo.due_date, sizeof(todo.due_date), stdin);
+            // sscanf(todo.due_date, "%s", todo.due_date);
 
-            initialTask(todo.task_id, todo.task_name, todo.task_description, todo.due_date);
-            resizeTask(&tasks, todo.task_id, todo.task_name, todo.task_description, todo.due_date);
-            createTask(&tasks, todo.task_id, todo.task_name, todo.task_description, todo.due_date);
+            initialTask(todo.task_id, todo.task_name, todo.task_description);
+            resizeTask(&tasks, todo.task_id, todo.task_name, todo.task_description);
+            createTask(&tasks, todo.task_id, todo.task_name, todo.task_description);
         }
         else if (strcmp(choice, "r") == 0)
         {
             printf("succesful read \n");
-            resizeTask(&tasks, todo.task_id, todo.task_name, todo.task_description, todo.due_date);
-            readTask(&tasks, todo.task_name, todo.task_description, todo.due_date);
+            resizeTask(&tasks, todo.task_id, todo.task_name, todo.task_description);
+            readTask(&tasks, todo.task_id, todo.task_name, todo.task_description);
         }
 
         return 0;
