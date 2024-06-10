@@ -33,8 +33,8 @@ struct task *initialTask(int id, char name[], char description[], char due_date[
         strcpy(ptr->task_description, description);
         strcpy(ptr->due_date, due_date);
 
-        printf("\n%p\n%p\n", ptr, &ptr);
-        printf("Name: %s\n", name);
+        // printf("\n%p\n%p\n", ptr, &ptr);
+        printf("\nName: %s\n", name);
         printf("Description: %s\n", description);
         printf("Due Date: %s\n", due_date);
 
@@ -43,10 +43,9 @@ struct task *initialTask(int id, char name[], char description[], char due_date[
     return ptr;
 }
 
-// write tasks to file
-void createTask(struct task **ptr, int id, char name[], char description[], char due_date[])
+// realloc memory for tasks
+void resizeTask(struct task **ptr, int id, char name[], char description[], char due_date[])
 {
-    int i, n = 2;
     struct task *ptr2 = realloc(*ptr, 40 * sizeof(struct task));
 
     if (ptr2 == NULL)
@@ -57,38 +56,63 @@ void createTask(struct task **ptr, int id, char name[], char description[], char
     else
     {
         printf("Realloc successful");
+    }
+}
+
+// write tasks to file
+void createTask(struct task **ptr, int id, char name[], char description[], char due_date[])
+{
+
+    int i, n = 1;
+    int count = 0;
+
+    for (i = 0; i < n; i++)
+    {
 
         FILE *fptr = fopen("todolist.txt", "a");
+        count++;
+        fprintf(fptr, "\n%d\t %s\t %s\t %s\t", count, name, description, due_date);
+        printf("\nCreated task successfully!: %s", name);
+        fclose(fptr);
+    }
+}
 
-        int count = 1;
-        for (i = 0; i < n; i++)
-        {
-            fprintf(fptr, "\n%d %s\t %s\t %s\t", count, name, description, due_date);
-            count++;
+// read all tasks from file
+void readTask(struct task **ptr, char name[], char description[], char due_date[])
+{
+    FILE *fptr = fopen("todolist.txt", "r");
 
-            fclose(fptr);
-        }
+    int i, n = 2;
+    // int count = 0;
+
+    puts("\n#\t Task Name:\t Description:\t Due Date:\n");
+    for (i = 0; i < n; i++)
+    {
+        fscanf(fptr, "%s\t %s\t %s\t", name, description, due_date);
+        printf("%s\t %s\t %s\t\n", name, description, due_date);
+        fclose(fptr);
     }
 }
 
 int main()
 {
-    char choice[10];
-    struct task todo;
-    struct task *tasks = NULL;
-    char ptr;
-
-    printf("--------------------------------------\n");
-    printf("To add a new task: type 'c'\n");
-    printf("To see all current tasks: type 'r'\n");
-    printf("To update a task: type 'u'\n");
-    printf("To delete a task: type 'd'\n");
-    printf("--------------------------------------");
 
     while (true)
     {
+        char choice[10];
+        struct task todo;
+        struct task *tasks = NULL;
+        // char ptr;
+
+        printf("--------------------------------------\n");
+        printf("To add a new task: type 'c'\n");
+        printf("To see all current tasks: type 'r'\n");
+        printf("To update a task: type 'u'\n");
+        printf("To delete a task: type 'd'\n");
+        printf("--------------------------------------");
+
         printf("\nYour response: ");
-        fgets(choice, 100, stdin);
+        fgets(choice, 9, stdin);
         sscanf(choice, "%s", choice);
 
         if (strcmp(choice, "c") == 0)
@@ -107,16 +131,16 @@ int main()
             sscanf(todo.due_date, "%s", todo.due_date);
 
             initialTask(todo.task_id, todo.task_name, todo.task_description, todo.due_date);
+            resizeTask(&tasks, todo.task_id, todo.task_name, todo.task_description, todo.due_date);
             createTask(&tasks, todo.task_id, todo.task_name, todo.task_description, todo.due_date);
         }
         else if (strcmp(choice, "r") == 0)
         {
             printf("succesful read \n");
-            createTask(&tasks, todo.task_id, todo.task_name, todo.task_description, todo.due_date);
+            resizeTask(&tasks, todo.task_id, todo.task_name, todo.task_description, todo.due_date);
+            readTask(&tasks, todo.task_name, todo.task_description, todo.due_date);
         }
 
         return 0;
     }
 }
-
-// fprintf(fptr, "#\t Task Name:\t Description:\t Due Date:\n");
