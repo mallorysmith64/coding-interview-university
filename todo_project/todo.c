@@ -16,7 +16,7 @@ struct task
 };
 
 // create initial memory for tasks
-struct task *initialTask(int id, char name[], char description[], char due_date[])
+struct task static *initialTask(int id, char name[], char description[], char due_date[])
 {
     struct task *ptr = malloc(10 * sizeof(struct task));
 
@@ -44,7 +44,7 @@ struct task *initialTask(int id, char name[], char description[], char due_date[
 }
 
 // realloc memory for tasks
-void resizeTask(struct task **ptr, int id, char name[], char description[], char due_date[])
+void static resizeTask(struct task **ptr, int id, char name[], char description[], char due_date[])
 {
     struct task *ptr2 = realloc(*ptr, 40 * sizeof(struct task));
 
@@ -57,10 +57,11 @@ void resizeTask(struct task **ptr, int id, char name[], char description[], char
     {
         printf("Realloc successful");
     }
+    free(ptr2);
 }
 
 // write tasks to file
-void createTask(struct task **ptr, int id, char name[], char description[], char due_date[])
+void static createTask(struct task **ptr, int id, char name[], char description[], char due_date[])
 {
 
     int i, n = 1;
@@ -78,7 +79,7 @@ void createTask(struct task **ptr, int id, char name[], char description[], char
 }
 
 // read all tasks from file
-void readTask(struct task **ptr, char name[], char description[], char due_date[])
+void static readTask(struct task **ptr, char name[], char description[], char due_date[])
 {
     FILE *fptr = fopen("todolist.txt", "r");
 
